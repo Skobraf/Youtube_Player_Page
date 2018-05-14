@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Player Clone</title>
+    <link rel="icon" href="images/favicon.png">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Header Start-->
+    <header>
+        <div class="btn-container">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+        <a href="#"><img src="images/logo.png"></a>
+        <form>
+            <input type="text" placeholder="Search">
+        </form>
+        <button>
+          <div class="btn-container" id="search-btn">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </button>
+        <div id="header-btns">
+          <div class="btn-container">
+            <a href="#"><i class="fas fa-upload"></i></a>
+          </div>
+          <div class="btn-container">
+            <a href="#"><i class="fas fa-th"></i></a>
+          </div>
+          <div class="btn-container">
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+            <a href="#"><button>SIGN IN</button></a>
+        </div>
+    </header>
+<!-- Header Ends-->
+    <section id="container">
+      <!-- Right Section Start-->
+        <aside>
+            <h4>Up next</h4>
+            <div id="autoplay-container">
+                <h5>AUTOPLAY</h5>
+                <div id="autoplay-bg"></div>
+                <div id="autoplay-btn"></div>
+            </div>
+          <!-- Other videos section start-->
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar1.png">
+                <div>
+                    <h5>"From Coding Student to Freelance Hero" - Microverse</h5>
+                    <h6>Microverse Programmer</h6>
+                    <h6>210K views</h6>
+                </div>
+            </article>
+          </a>
+            <div class="line"></div>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar2.png">
+                <div>
+                    <h5>Cheb khaled concert complet festival 2010</h5>
+                    <h6>cheb khaled</h6>
+                    <h6>945K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar19.png">
+                <div>
+                    <h5>ASP.NET Community Standup April 24,2018</h5>
+                    <h6>.NET Foundation</h6>
+                    <h6>Recommended for you</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar3.png">
+                <div>
+                    <h5>'How to Get a Job at the Big 4 - Amazon, Facebook, Google &amp;</h5>
+                    <h6>imtiana</h6>
+                    <h6>766K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar4.png">
+                <div>
+                    <h5>How i learned to code - and got a Job at Google!</h5>
+                    <h6>MicrowaveSam</h6>
+                    <h6>504K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar20.png">
+                <div>
+                    <h5>The World Ends With You - Calling</h5>
+                    <h6>Mythgraven</h6>
+                    <h6>Recommended for you</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar5.png">
+                <div>
+                    <h5>Is computer Programming hard to learn??! Zuckerberg</h5>
+                    <h6>MHZ</h6>
+                    <h6>852K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar6.png">
+                <div>
+                    <h5>Beginners guide to contributing to open source software</h5>
+                    <h6>iiitafirefoxclub</h6>
+                    <h6>40K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar7.png">
+                <div>
+                    <h5>How to start Open-Source Project - Episode 1</h5>
+                    <h6>The Linux Channel</h6>
+                    <h6>10K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar8.png">
+                <div>
+                    <h5>How To Be A Well-Paid Programmer In 1 Year?</h5>
+                    <h6>John Sonmez</h6>
+                    <h6>54K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar9.png">
+                <div>
+                    <h5>Become an Open Source Developer</h5>
+                    <h6>HowToBecomeTV</h6>
+                    <h6>17K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar10.png">
+                <div>
+                    <h5>How To Contribute To The Open Source Community?</h5>
+                    <h6>John Sonmez</h6>
+                    <h6>10K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar11.png">
+                <div>
+                    <h5>Open Source Basics | Intel Software</h5>
+                    <h6>Intel Software</h6>
+                    <h6>69K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar12.png">
+                <div>
+                    <h5>8 ways to get started in open source</h5>
+                    <h6>Opensource.com</h6>
+                    <h6>2K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar13.png">
+                <div>
+                    <h5>Contributing to Open-Source Projects as a New Python</h5>
+                    <h6>Python Training by Dan Bader</h6>
+                    <h6>4.8K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar14.png">
+                <div>
+                    <h5>Write and Submit your first Linux kernel Patch</h5>
+                    <h6>FOSDEM</h6>
+                    <h6>127K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar15.png">
+                <div>
+                    <h5>We Tried CEO Morning &amp; Night Routines</h5>
+                    <h6>BuzzFeedBlue</h6>
+                    <h6>1.7M views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar16.png">
+                <div>
+                    <h5>Analyzing Millions of GitHub Commits: What Makes</h5>
+                    <h6>Ilya Grigorik</h6>
+                    <h6>11K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar17.png">
+                <div>
+                    <h5>Make Your First Contribution on GitHub</h5>
+                    <h6>Miguel Grinberg</h6>
+                    <h6>2.5K views</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+              <article class="sidebar-vid">
+                <img src="images/sidebar18.png">
+                <div class="single-line">
+                    <h5>Bob MarleyTopPlaylistSong's - Top Songs <br>
+                    </h5>
+                    <h6>solid snack</h6>
+                    <h6>Recomended for you</h6>
+                </div>
+            </article>
+          </a>
+            <a href="#">
+                <div id="show-more">
+                    <h5>SHOW MORE</h5>
+                </div>
+            </a>
+            <!-- Other videos section ends-->
+        </aside>
+<!-- right section ends-->
+        <iframe src="https://www.youtube.com/embed/ZvIq-ohWBm8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Video description-->
+        <section id="vid-desc">
+            <h3>"From Coding Student to Freelance Hero" - Microverse</h3>
+            <h4>210,631 views</h4>
+            <div id="desc-buttons">
+                <div id="likes">
+                    <div class="btn-container">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <p>262</p>
+                    <div class="btn-container">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                    <p>8</p>
+                </div>
+                <div class="btn-container">
+                    <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                        <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
+                    </svg></a>
+                </div>
+                <p>SHARE</p>
+                <div class="btn-container" id="add-to">
+                    <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                        <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
+                    </svg></a>
+                </div>
+                <a href="#"><svg width="24" height="24">
+                    <circle cx="5" cy="12" r="2"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <circle cx="19" cy="12" r="2"></circle>
+                </svg></a>
+            </div>
+            <div class="line"></div>
+            <div id="creator-icon">A</div>
+            <a href="#"><button>SUBSCRIBE  <span>559</span></button></a>
+            <article>
+                <h5>Microverse Programmer</h5>
+                <h6>Published on Feb 28, 2018</h6>
+                <p>Every thing you need to know and practice to become a master Freelancer with the pros from all arround the gobe - Microverse is the best remote programming program for newbie web developpers </p>
+                <a href="#"><p>SHOW MORE</p></a>
+            </article>
+            <div class="line"></div>
+        </section>
+<!-- Comment section-->
+        <section id="comment-block">
+            <h4>6 Comments</h4>
+            <a href="#"><button>
+                <div class="btn-container" id="comment-sort"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                    <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" class="style-scope yt-icon"></path>
+                </svg></div>
+                <span>SORT BY</span></button></a><br>
+            <img src="images/user-img.png">
+            <div id="user-comment">
+                <form>
+                    <input type="text" placeholder="Add a public comment...">
+                </form>
+            </div>
+            <!-- comments description-->
+            <article>
+                <div class="img-container">
+                    <img src="images/avatar1.jpg">
+                </div>
+                <!-- comment content-->
+                <div class="comment-content">
+                    <h4>Wing N.</h4>
+                    <span class="comment-date">4 days ago (edited)</span>
+                    <p>"use your powers for good" haha<br>
+                    thank you for the video.</p>
+                    <a href="#"><button>REPLY</button></a>
+                    <span class="like-count">1</span>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-container">
+                    <img src="images/avatar2.jpg">
+                </div>
+
+                <div class="comment-content">
+                    <h4>L.A Park</h4>
+                    <span class="comment-date">1 months ago</span>
+                    <p>thanks a lot for video</p>
+                    <a href="#"><button>REPLY</button></a>
+                    <span class="like-count">2</span>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-container">
+                    <img src="images/avatar3.jpg">
+                </div>
+
+                <div class="comment-content">
+                    <h4>Florida</h4>
+                    <span class="comment-date">1 months ago</span>
+                    <p>Wow this video was super helpful, clear, and concise. Thank you very much.</p>
+                    <a href="#"><button>REPLY</button></a>
+                    <span class="like-count">1</span>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-container">
+                    <img src="images/avatar4.jpg">
+                </div>
+
+                <div class="comment-content">
+                    <h4>San Fransisco</h4>
+                    <span class="comment-date">2 months ago</span>
+                    <p>Nice.Thanks a lot :)</p>
+                    <a href="#"><button>REPLY</button></a>
+                    <span class="like-count">1</span>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-container">
+                    <img src="images/avatar5.jpg">
+                </div>
+
+                <div class="comment-content">
+                    <h4>will Smith</h4>
+                    <span class="comment-date">2 weeks ago</span>
+                    <p>Your video helped me! Thank you so much!</p>
+                    <a href="#"><button>REPLY</button></a>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-container">
+                    <img src="images/avatar8.jpg">
+                </div>
+
+                <div class="comment-content">
+                    <h4>Achihaja</h4>
+                    <span class="comment-date">3 days ago</span>
+                    <p>lorum ipsum dollor </p>
+                    <a href="#"><button>REPLY</button></a>
+                    <span class="like-count">1</span>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg></a>
+                    </div>
+                    <div class="btn-container comment-btn">
+                        <a href="#"><svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+</body>
+</html>
